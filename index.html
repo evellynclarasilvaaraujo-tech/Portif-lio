@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evlyndev | Portfólio de Evellyn — Desenvolvedora Front-End</title>
+    <meta name="description"
+        content="Portfólio de Evellyn, desenvolvedora Front-End e estudante de Análise e Desenvolvimento de Sistemas. Interfaces modernas, acessíveis e responsivas.">
+    <meta name="author" content="Evellyn — Evlyndev">
+    <meta name="theme-color" content="#050817">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Evlyndev | Portfólio Front-End">
+    <meta property="og:description"
+        content="Transformando ideias em experiências digitais modernas, funcionais e intuitivas.">
+    <meta property="og:image" content="./imgs/logo-Photoroom.png">
+    <link rel="icon" type="image/png" href="./imgs/logo-photoroom.png">
+
+    <!-- Fontes: aprimoramento progressivo (o site funciona com as fontes do sistema se não carregarem) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&family=Orbitron:wght@500;600&display=swap">
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+    <!-- Sprite de ícones (SVG inline, sem dependências) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <defs>
+            <symbol id="i-html" viewBox="0 0 24 24">
+                <path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" fill="none" stroke="currentColor" stroke-width="1.7"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-css" viewBox="0 0 24 24">
+                <path
+                    d="M9 4C6 4 7 8 5 9c-1 .5-2 .5-2 .5v1s1 0 2 .5c2 1 1 5 4 5M15 4c3 0 2 4 4 5 1 .5 2 .5 2 .5v1s-1 0-2 .5c-2 1-1 5-4 5M9 20h0M15 20h0"
+                    fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-js" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="currentColor" stroke-width="1.7" />
+                <path
+                    d="M10 9v5.5a2 2 0 0 1-2 2M14.5 15.5c.4.6 1 1 1.8 1 1 0 1.7-.5 1.7-1.3 0-1.8-3.4-1.1-3.4-3 0-.8.7-1.3 1.6-1.3.8 0 1.3.3 1.7.9"
+                    fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-responsive" viewBox="0 0 24 24">
+                <rect x="3" y="4" width="13" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.7" />
+                <rect x="14" y="9" width="7" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.7" />
+                <path d="M7 18h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+            </symbol>
+            <symbol id="i-git" viewBox="0 0 24 24">
+                <circle cx="6" cy="5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7" />
+                <circle cx="6" cy="19" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7" />
+                <circle cx="18" cy="9" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7" />
+                <path d="M6 7.2v9.6M18 11.2c0 4-6 3-11 6" fill="none" stroke="currentColor" stroke-width="1.7"
+                    stroke-linecap="round" />
+            </symbol>
+            <symbol id="i-design" viewBox="0 0 24 24">
+                <path d="M4 20l1-4 11-11 3 3L8 19l-4 1zM14 7l3 3" fill="none" stroke="currentColor" stroke-width="1.7"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-vscode" viewBox="0 0 24 24">
+                <rect x="3" y="4" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.7" />
+                <path d="M10 9l-3 3 3 3M14 9l3 3-3 3" fill="none" stroke="currentColor" stroke-width="1.7"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-figma" viewBox="0 0 24 24">
+                <path
+                    d="M9 3h3a3 3 0 0 1 0 6H9zM9 3a3 3 0 0 0 0 6h3M9 9a3 3 0 0 0 0 6h3M12 9h0a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM9 15a3 3 0 1 0 3 3v-3z"
+                    fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-mail" viewBox="0 0 24 24">
+                <rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.7" />
+                <path d="M4 8l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-linkedin" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.7" />
+                <path d="M8 10v6M8 7.5v.01M12 16v-6M12 12.5c0-1.5 1-2.5 2.3-2.5 1.4 0 2.2 1 2.2 2.6V16" fill="none"
+                    stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+            </symbol>
+            <symbol id="i-github" viewBox="0 0 24 24">
+                <path
+                    d="M9 19c-4 1.2-4-2-6-2.5M15 21v-3.2c0-1 .1-1.5-.5-2.3 2.7-.3 5.5-1.3 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.3 1.3a11.400 11.400 0 0 0-6 0C7 3.800 6 4.100 6 4.100a4.300 4.300 0 0 0-.1 3.200A4.600 4.600 0 0 0 4.600 10.500c0 4.600 2.800 5.700 5.500 6-.6.700-.6 1.300-.5 2.300V21"
+                    fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-whatsapp" viewBox="0 0 24 24">
+                <path d="M4 20l1.2-4A8 8 0 1 1 8 18.800L4 20z" fill="none" stroke="currentColor" stroke-width="1.7"
+                    stroke-linejoin="round" />
+                <path d="M9 9c0 3 3 6 6 6l1.200-1.500-2-1-1 .8c-1-.4-1.900-1.300-2.300-2.300l.8-1-1-2L9 9z"
+                    fill="currentColor" />
+            </symbol>
+            <symbol id="i-arrow" viewBox="0 0 24 24">
+                <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-external" viewBox="0 0 24 24">
+                <path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none"
+                    stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- Barra de progresso de rolagem -->
+    <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+    <!-- Cursor personalizado (apenas desktop com mouse) -->
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+    <!-- Partículas tecnológicas discretas -->
+    <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="#inicio" class="brand" aria-label="Evlyndev — voltar ao início">
+                <img src="./imgs/logo-Photoroom.png" alt="" width="56" height="38" class="brand-mark">
+                <span class="brand-text">Evlyn<span>dev</span></span>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav"
+                aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===================== HERO ===================== -->
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-bg" aria-hidden="true">
+                <div class="glow glow-a" data-parallax="0.15"></div>
+                <div class="glow glow-b" data-parallax="-0.1"></div>
+                <div class="grid-lines"></div>
+            </div>
+
+            <div class="container hero-inner">
+                <div class="hero-meta hero-meta-top" data-hero-anim>
+                    <span>Front-End Developer</span>
+                    <span>Portfólio · <span data-year>2026</span></span>
+                </div>
+
+                <h1 class="hero-title" id="hero-title" data-hero-anim>
+                    <span class="sr-only">Portfólio de Evellyn, Front-End Developer</span>
+                    <span class="hero-word" aria-hidden="true">PORTFÓLIO</span>
+                </h1>
+
+                <div class="hero-butterfly" data-parallax="-0.06" data-hero-anim>
+                    <img src="./imgs/logo-Photoroom.png" alt="Logo Evlyndev: borboleta tecnológica em tons de azul"
+                        width="640" height="437" fetchpriority="high">
+                    <span class="float-tag tag-1" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="float-tag tag-2" aria-hidden="true">{ }</span>
+                    <span class="float-tag tag-3" aria-hidden="true">01</span>
+                    <span class="float-tag tag-4" aria-hidden="true">&lt;div&gt;</span>
+                </div>
+
+                <div class="hero-content">
+                    <div class="hero-left" data-hero-anim>
+                        <p class="hero-role">Front-End Developer</p>
+                        <p class="hero-name">EVELLYN</p>
+                        <p class="hero-text">Transformando ideias em experiências digitais modernas, funcionais e
+                            intuitivas.</p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="#projetos">Conheça meus projetos <svg class="icon">
+                                    <use href="#i-arrow" />
+                                </svg></a>
+                            <a class="btn btn-ghost" href="#contato">Entre em contato</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-right" data-hero-anim>
+                        <p>Desenvolvedora Front-End e estudante de Análise e Desenvolvimento de Sistemas, criando
+                            interfaces acessíveis, responsivas e centradas na pessoa usuária.</p>
+                        <a class="scroll-hint" href="#sobre" aria-label="Rolar para a seção Sobre"><span></span> Role
+                            para explorar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SOBRE ===================== -->
+        <section class="section about" id="sobre" aria-labelledby="sobre-title">
+            <div class="container about-grid">
+                <div class="about-photo reveal">
+                    <div class="photo-frame" id="photoFrame">
+                        <!-- Para usar sua foto: salve em assets/images/foto-evellyn.jpg (o placeholder some sozinho) -->
+                        <img src="./imgs/perfilp.jpeg" alt="Retrato profissional de Evellyn" id="aboutPhoto" width="520"
+                            height="640" loading="lazy">
+                        <div class="photo-placeholder" id="photoPlaceholder" hidden>
+                            <svg viewBox="0 0 120 120" aria-hidden="true">
+                                <circle cx="60" cy="46" r="20" fill="none" stroke="currentColor" stroke-width="2" />
+                                <path d="M20 108c3-24 20-36 40-36s37 12 40 36" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg>
+
+                        </div>
+                        <span class="corner corner-tl" aria-hidden="true"></span><span class="corner corner-br"
+                            aria-hidden="true"></span>
+                    </div>
+                </div>
+
+                <div class="about-text reveal">
+                    <p class="eyebrow">Sobre mim</p>
+                    <h2 id="sobre-title" class="section-title">Além do código, existe criatividade.</h2>
+                    <p class="lead">Olá! Sou Evellyn, desenvolvedora Front-End e estudante de Análise e Desenvolvimento
+                        de Sistemas. Tenho interesse em criar interfaces modernas, acessíveis e responsivas, unindo
+                        tecnologia, design e experiência do usuário.</p>
+                    <ul class="about-points">
+                        <li><svg class="icon">
+                                <use href="#i-responsive" />
+                            </svg> Interfaces responsivas</li>
+                        <li><svg class="icon">
+                                <use href="#i-design" />
+                            </svg> Atenção ao design e à experiência</li>
+                        <li><svg class="icon">
+                                <use href="#i-html" />
+                            </svg> Código limpo e semântico</li>
+                    </ul>
+                    <a class="btn btn-ghost" href="#contato">Vamos conversar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== HABILIDADES ===================== -->
+        <section class="section skills" id="habilidades" aria-labelledby="skills-title">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">Habilidades</p>
+                    <h2 id="skills-title" class="section-title">Tecnologias que uso para dar vida às ideias</h2>
+                </header>
+
+                <ul class="skills-grid">
+                    <li class="card skill-card reveal"><span class="card-icon"><svg>
+                                <use href="#i-html" />
+                            </svg></span>
+                        <h3>HTML5</h3>
+                        <p>Estrutura semântica, acessível e bem organizada.</p>
+                    </li>
+                    <li class="card skill-card reveal"><span class="card-icon"><svg>
+                                <use href="#i-css" />
+                            </svg></span>
+                        <h3>CSS3</h3>
+                        <p>Layouts com Flexbox, Grid, variáveis e animações.</p>
+                    </li>
+                    <li class="card skill-card reveal"><span class="card-icon"><svg>
+                                <use href="#i-js" />
+                            </svg></span>
+                        <h3>JavaScript</h3>
+                        <p>Interatividade e manipulação do DOM com JS puro.</p>
+                    </li>
+                    <li class="card skill-card reveal"><span class="card-icon"><svg>
+                                <use href="#i-responsive" />
+                            </svg></span>
+                        <h3>Design Responsivo</h3>
+                        <p>Interfaces que se adaptam a qualquer tamanho de tela.</p>
+                    </li>
+                    <li class="card skill-card reveal"><span class="card-icon"><svg>
+                                <use href="#i-git" />
+                            </svg></span>
+                        <h3>Git e GitHub</h3>
+                        <p>Versionamento de código e organização de projetos.</p>
+                    </li>
+                    <li class="card skill-card reveal"><span class="card-icon"><svg>
+                                <use href="#i-design" />
+                            </svg></span>
+                        <h3>UI/UX Design</h3>
+                        <p>Hierarquia visual, usabilidade e foco na experiência.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===================== PROJETOS ===================== -->
+        <section class="section projects" id="projetos" aria-labelledby="projects-title">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">Projetos</p>
+                    <h2 id="projects-title" class="section-title">Projetos selecionados</h2>
+                    <p class="section-note">Projetos que desenvolvi para transformar ideias em experiências digitais.</p>
+                </header>
+
+                <div class="projects-grid" id="projectsGrid">
+                    <article class="project-card card reveal" data-category="landing-page">
+                        <div class="project-thumb">
+                            <img src="./imgs/acaiteria.png" alt="Copos de açaí com frutas e complementos do projeto Açaí do Martins"
+                                width="800" height="500" loading="lazy">
+                            <span class="badge">Projeto autoral</span>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-index">01 · Landing page</p>
+                            <h3>Açaiteria — Açaí do Martins</h3>
+                            <p>Landing page criada para apresentar a açaiteria, destacar seus produtos e deixar o negócio mais atrativo para os clientes.</p>
+                            <ul class="tags" aria-label="Tecnologias utilizadas">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a class="btn btn-small btn-primary" href="https://martins-acai.netlify.app"
+                                    target="_blank" rel="noopener noreferrer">Ver projeto <svg class="icon">
+                                        <use href="#i-external" />
+                                    </svg></a>
+                                <a class="btn btn-small btn-ghost"
+                                    href="https://github.com/evellynclarasilvaaraujo-tech/Acaiteria" target="_blank"
+                                    rel="noopener noreferrer"><svg class="icon">
+                                        <use href="#i-github" />
+                                    </svg> Código</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card card reveal" data-category="landing-page">
+                        <div class="project-thumb">
+                            <img src="./imgs/manicure.jpg" alt="Unhas decoradas do portfólio da nail designer Daiana Araújo"
+                                width="800" height="500" loading="lazy">
+                            <span class="badge">Projeto autoral</span>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-index">02 · Landing page</p>
+                            <h3>Daiana Araújo — Nail Designer</h3>
+                            <p>Landing page para apresentar o catálogo de serviços e valores da manicure e atrair clientes com uma vitrine visual elegante.</p>
+                            <ul class="tags" aria-label="Tecnologias utilizadas">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a class="btn btn-small btn-primary"
+                                    href="https://evellynclarasilvaaraujo-tech.github.io/sistema-agendamento-unhas/"
+                                    target="_blank" rel="noopener noreferrer">Ver projeto <svg class="icon">
+                                        <use href="#i-external" />
+                                    </svg></a>
+                                <a class="btn btn-small btn-ghost"
+                                    href="https://github.com/evellynclarasilvaaraujo-tech/sistema-agendamento-unhas"
+                                    target="_blank" rel="noopener noreferrer"><svg class="icon">
+                                        <use href="#i-github" />
+                                    </svg> Código</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card card reveal" data-category="interativo">
+                        <div class="project-thumb">
+                            <img src="./imgs/projeto-login.svg" alt="Prévia da tela de login com campos de e-mail e senha"
+                                width="800" height="500" loading="lazy">
+                            <span class="badge">Meu primeiro projeto</span>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-index">03 · Autenticação</p>
+                            <h3>Login — Sistema de Autenticação</h3>
+                            <p>Meu primeiro projeto: uma tela de acesso com e-mail e senha, opção para mostrar a senha e aceite dos termos de uso.</p>
+                            <ul class="tags" aria-label="Recursos do projeto">
+                                <li>Login</li>
+                                <li>E-mail e senha</li>
+                                <li>Interface web</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a class="btn btn-small btn-primary" href="https://evellynclarasilvaaraujo-tech.github.io/Login/"
+                                    target="_blank" rel="noopener noreferrer">Ver projeto <svg class="icon">
+                                        <use href="#i-external" />
+                                    </svg></a>
+                                <a class="btn btn-small btn-ghost"
+                                    href="https://github.com/evellynclarasilvaaraujo-tech/Login" target="_blank"
+                                    rel="noopener noreferrer"><svg class="icon">
+                                        <use href="#i-github" />
+                                    </svg> Código</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PROCESSO + FERRAMENTAS ===================== -->
+        <section class="section process-tools" aria-label="Processo de desenvolvimento e ferramentas">
+            <div class="container pt-grid">
+                <div class="process reveal" id="processo">
+                    <p class="eyebrow">Processo de desenvolvimento</p>
+                    <h2 class="section-title small">Um processo pensado para resultados consistentes</h2>
+                    <ol class="steps">
+                        <li><span class="step-num">01</span>
+                            <div>
+                                <h3>Planejamento</h3>
+                                <p>Entendimento dos objetivos, do público e do escopo do projeto.</p>
+                            </div>
+                        </li>
+                        <li><span class="step-num">02</span>
+                            <div>
+                                <h3>Estruturação</h3>
+                                <p>Organização do conteúdo, do layout e da semântica do HTML.</p>
+                            </div>
+                        </li>
+                        <li><span class="step-num">03</span>
+                            <div>
+                                <h3>Desenvolvimento</h3>
+                                <p>Construção da interface com CSS, JavaScript e boas práticas.</p>
+                            </div>
+                        </li>
+                        <li><span class="step-num">04</span>
+                            <div>
+                                <h3>Responsividade</h3>
+                                <p>Ajustes para celulares, tablets, notebooks e desktops.</p>
+                            </div>
+                        </li>
+                        <li><span class="step-num">05</span>
+                            <div>
+                                <h3>Finalização</h3>
+                                <p>Revisão, testes, acessibilidade e entrega com cuidado.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="tools reveal" id="ferramentas">
+                    <p class="eyebrow">Ferramentas que utilizo</p>
+                    <h2 class="section-title small">Meu kit de trabalho</h2>
+                    <ul class="tools-grid">
+                        <li class="card tool"><svg class="tool-icon">
+                                <use href="#i-vscode" />
+                            </svg><span>VS Code</span></li>
+                        <li class="card tool"><svg class="tool-icon">
+                                <use href="#i-github" />
+                            </svg><span>GitHub</span></li>
+                        <li class="card tool"><svg class="tool-icon">
+                                <use href="#i-figma" />
+                            </svg><span>Figma</span></li>
+                        <li class="card tool"><svg class="tool-icon">
+                                <use href="#i-html" />
+                            </svg><span>HTML</span></li>
+                        <li class="card tool"><svg class="tool-icon">
+                                <use href="#i-css" />
+                            </svg><span>CSS</span></li>
+                        <li class="card tool"><svg class="tool-icon">
+                                <use href="#i-js" />
+                            </svg><span>JavaScript</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CONTATO ===================== -->
+        <section class="section contact" id="contato" aria-labelledby="contact-title">
+            <div class="container contact-grid">
+                <div class="contact-info reveal">
+                    <p class="eyebrow">Contato</p>
+                    <h2 id="contact-title" class="section-title">Vamos criar algo incrível?</h2>
+                    <p class="lead">Se você é recrutador(a), representa uma empresa ou tem uma ideia de projeto, vou
+                        adorar conversar. Envie uma mensagem e retorno assim que possível.</p>
+
+                    <ul class="contact-links">
+                        <li><a href="#" id="linkEmail" class="contact-link"><svg class="icon">
+                                    <use href="#i-mail" />
+                                </svg><span id="textEmail">E-mail</span></a></li>
+                        <li><a href="#" id="linkLinkedin" class="contact-link" target="_blank"
+                                rel="noopener noreferrer"><svg class="icon">
+                                    <use href="#i-linkedin" />
+                                </svg><span>LinkedIn</span></a></li>
+                        <li><a href="#" id="linkGithub" class="contact-link" target="_blank"
+                                rel="noopener noreferrer"><svg class="icon">
+                                    <use href="#i-github" />
+                                </svg><span>GitHub</span></a></li>
+                    </ul>
+
+                    <a href="#" id="linkWhatsapp" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><svg
+                            class="icon">
+                            <use href="#i-whatsapp" />
+                        </svg> Falar no WhatsApp</a>
+                </div>
+
+                <form class="contact-form card reveal" id="contactForm" novalidate aria-describedby="formStatus">
+                    <div class="field">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" required minlength="2"
+                            placeholder="Seu nome">
+                        <p class="error" id="erro-nome" role="alert"></p>
+                    </div>
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required
+                            placeholder="voce@exemplo.com">
+                        <p class="error" id="erro-email" role="alert"></p>
+                    </div>
+                    <div class="field">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" required minlength="3"
+                            placeholder="Sobre o que quer falar?">
+                        <p class="error" id="erro-assunto" role="alert"></p>
+                    </div>
+                    <div class="field">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required minlength="10"
+                            placeholder="Conte um pouco sobre a oportunidade ou o projeto"></textarea>
+                        <p class="error" id="erro-mensagem" role="alert"></p>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar mensagem <svg class="icon">
+                            <use href="#i-arrow" />
+                        </svg></button>
+                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a href="#inicio" class="footer-logo" aria-label="Evlyndev — voltar ao topo">
+                <img src="./imgs/logo-photoroom.png" alt="Evlyndev" width="220" height="161" loading="lazy">
+            </a>
+            <p class="footer-phrase">Desenvolvendo o futuro, uma linha de código por vez.</p>
+            <ul class="social" aria-label="Redes sociais">
+                <li><a href="#" id="footLinkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg
+                            class="icon">
+                            <use href="#i-linkedin" />
+                        </svg></a></li>
+                <li><a href="#" id="footGithub" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg
+                            class="icon">
+                            <use href="#i-github" />
+                        </svg></a></li>
+                <li><a href="#" id="footEmail" aria-label="E-mail"><svg class="icon">
+                            <use href="#i-mail" />
+                        </svg></a></li>
+                <li><a href="#" id="footWhatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg
+                            class="icon">
+                            <use href="#i-whatsapp" />
+                        </svg></a></li>
+            </ul>
+            <p class="copyright">© <span data-year>2026</span> Evlyndev · Evellyn. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

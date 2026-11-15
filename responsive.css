@@ -1,0 +1,79 @@
+/* =========================================================
+   Evlyndev — Portfólio
+   responsive.css: ajustes progressivos (mobile-first)
+   Breakpoints: 600px (celular grande) · 768px (tablet) · 1024px (notebook) · 1280px (desktop)
+   ========================================================= */
+
+/* ---------- Celular grande / tablet pequeno ---------- */
+@media (min-width: 600px) {
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+  .tools-grid { grid-template-columns: repeat(3, 1fr); }
+  .hero-butterfly { width: min(60%, 440px); }
+}
+
+/* ---------- Tablet ---------- */
+@media (min-width: 768px) {
+  :root { --header-h: 76px; }
+
+  .section { padding-block: 6.5rem; }
+
+  /* Menu horizontal no lugar do painel mobile */
+  .header-inner { flex-wrap: nowrap; gap: 1.5rem; }
+  .menu-toggle { display: none; }
+  .main-nav {
+    order: 0;
+    width: auto;
+    margin-left: auto;
+    position: static;
+    inset: auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    backdrop-filter: none;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  .main-nav ul { flex-direction: row; gap: 0.4rem; }
+  .nav-link { border: 0; padding: 0.5rem 0.9rem; font-size: 0.92rem; border-radius: 999px; }
+  .nav-link:hover, .nav-link.is-active { padding-left: 0.9rem; background: rgba(50, 217, 255, 0.08); }
+
+  .hero-meta { font-size: 0.7rem; }
+  .hero-content { grid-template-columns: 1.1fr 0.9fr; align-items: end; gap: var(--s-7); }
+  .hero-right { justify-self: end; }
+
+  .about-grid { grid-template-columns: 0.9fr 1.1fr; gap: var(--s-8); }
+
+  .contact-grid { grid-template-columns: 1fr 1fr; gap: var(--s-8); }
+  .contact-form { padding: var(--s-6); }
+  .footer-inner { grid-template-columns: auto 1fr auto; justify-items: start; text-align: left; align-items: center; }
+  .footer-phrase { justify-self: center; text-align: center; }
+  .copyright { grid-column: 1 / -1; justify-self: center; padding-top: var(--s-4); border-top: 1px solid var(--c-border); width: 100%; text-align: center; }
+}
+
+/* ---------- Notebook ---------- */
+@media (min-width: 1024px) {
+  .skills-grid { grid-template-columns: repeat(3, 1fr); }
+
+  .pt-grid { grid-template-columns: 1.1fr 0.9fr; gap: var(--s-8); align-items: start; }
+
+  /* Borboleta sobrepõe o título PORTFÓLIO, como na composição editorial de referência */
+  .hero-inner { gap: 0; }
+  .hero-butterfly { position: absolute; left: 50%; top: 17%; width: min(34vw, 470px); margin: 0; transform: translateX(-50%); z-index: 2; }
+  .hero-title { margin-top: var(--s-5); }
+  .hero-content { margin-top: clamp(9rem, 22vw, 17rem); }
+  .tag-1 { left: -14%; } .tag-2 { right: -16%; } .tag-3 { left: -10%; } .tag-4 { right: -12%; }
+}
+
+@media (max-width: 420px) {
+  .container { width: min(100% - 1.5rem, 1180px); }
+  .hero-meta { font-size: 0.55rem; }
+  .hero-actions .btn { flex: 1 1 100%; }
+}
+
+/* ---------- Desktop com mouse: cursor personalizado ---------- */
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+  body.has-custom-cursor, body.has-custom-cursor a, body.has-custom-cursor button { cursor: none; }
+  .cursor-dot, .cursor-ring { display: block; position: fixed; top: 0; left: 0; z-index: 300; pointer-events: none; border-radius: 50%; }
+  .cursor-dot { width: 6px; height: 6px; margin: -3px 0 0 -3px; background: var(--c-cyan); box-shadow: 0 0 10px var(--c-cyan); }
+}

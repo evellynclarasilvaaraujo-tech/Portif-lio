@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#6500f5"/>
+      <stop offset="1" stop-color="#c20ce7"/>
+    </linearGradient>
+    <linearGradient id="button" x2="1">
+      <stop stop-color="#5900ee"/>
+      <stop offset="1" stop-color="#a20be7"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#3b087b" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#background)"/>
+  <rect x="225" y="24" width="350" height="452" rx="24" fill="#fff" filter="url(#shadow)"/>
+  <circle cx="400" cy="94" r="31" fill="url(#button)"/>
+  <text x="400" y="162" fill="#292638" font-family="Arial,sans-serif" font-size="24" font-weight="700" text-anchor="middle">Bem-vindo de volta</text>
+  <text x="400" y="188" fill="#777382" font-family="Arial,sans-serif" font-size="13" text-anchor="middle">Entre com sua conta para continuar</text>
+  <text x="260" y="226" fill="#332f3b" font-family="Arial,sans-serif" font-size="13" font-weight="600">E-mail</text>
+  <rect x="260" y="237" width="280" height="40" rx="10" fill="#faf9fc" stroke="#dedbe6"/>
+  <text x="400" y="262" fill="#aaa6b5" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">seuemail@exemplo.com</text>
+  <text x="260" y="310" fill="#332f3b" font-family="Arial,sans-serif" font-size="13" font-weight="600">Senha</text>
+  <rect x="260" y="321" width="280" height="40" rx="10" fill="#faf9fc" stroke="#dedbe6"/>
+  <text x="400" y="347" fill="#aaa6b5" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">Digite sua senha</text>
+  <circle cx="276" cy="382" r="7" fill="none" stroke="#aaa6b5" stroke-width="1.5"/>
+  <path d="M272 382h8M276 378v8" stroke="#aaa6b5" stroke-width="1"/>
+  <text x="291" y="386" fill="#777382" font-family="Arial,sans-serif" font-size="12">Li e concordo com os termos de uso</text>
+  <rect x="260" y="405" width="280" height="42" rx="11" fill="url(#button)"/>
+  <text x="400" y="432" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="700" text-anchor="middle">Entrar</text>
+</svg>
